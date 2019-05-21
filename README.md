@@ -6,8 +6,8 @@ redux-saga の実装をプロジェクトメンバーに伝えるために作成
 
 ## Setup
 
-1. [Google Cloud Console](https://developers.google.com/youtube/registering_an_application?hl=ja)からプロジェクトを作成し、YouTubeAPI の API KEY を取得します。
-1. `.env`をプロジェクト直下に作成し、`REACT_APP_YOUTUBE_API_KEY`にセットします。
+1. [YouTube API 承認の認証情報を取得する](https://developers.google.com/youtube/registering_an_application?hl=ja)を参考に、YouTubeAPI の API KEY を取得します。
+1. `.env`をプロジェクト直下に作成し、`REACT_APP_YOUTUBE_API_KEY`にセットします。（参考：`.example.env`）
 
 ## Feature work
 

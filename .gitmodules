@@ -1,0 +1,3 @@
+[submodule "commit_template"]
+	path = commit_template
+	url = https://gist.github.com/YTakahashii/e55fcd6848a699944b13083ee7676b25

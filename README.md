@@ -1,19 +1,26 @@
 # My YouTube Client
 
-redux-saga の実装をプロジェクトメンバーに伝えるために作成した YouTube クライアントです。
+技術習得と redux-saga の実装をプロジェクトメンバーに伝えるために作成した YouTube クライアントです。
 
-まだ動画名を検索することしかできません。
+本家に近づけることが目標。
 
-## Setup
+## セットアップ
 
 1. [YouTube API 承認の認証情報を取得する](https://developers.google.com/youtube/registering_an_application?hl=ja)を参考に、YouTubeAPI の API KEY を取得します。
 1. `.env`をプロジェクト直下に作成し、`REACT_APP_YOUTUBE_API_KEY`にセットします。（参考：`.example.env`）
 
-## 参考
+## 使用している API
 
 [YouTube Data API (v3)
 Search: list](https://developers.google.com/youtube/v3/docs/search/list?hl=ja)
 
+## 更新履歴
+
+- キーワード検索で最新 20 件の動画リストを表示 (2019-05-23)
+  [![Image from Gyazo](https://i.gyazo.com/e01acdef145648f418ea1fcf39989a92.gif)](https://gyazo.com/e01acdef145648f418ea1fcf39989a92)
+
 ## Feature work
 
-- ちゃんと動画見れるようにするぞ
+- アプリ内で動画の再生
+- React-Router による適切なルーティング
+- その他色々

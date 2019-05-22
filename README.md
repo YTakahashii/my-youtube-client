@@ -1,6 +1,6 @@
 # My YouTube Client
 
-技術習得と redux-saga の実装をプロジェクトメンバーに伝えるために作成した YouTube クライアントです。
+技術習得と redux-saga と TypeScript を使った実装をプロジェクトメンバーに伝えるために作成した YouTube クライアントです。
 
 本家に近づけることが目標。
 
@@ -19,8 +19,9 @@ Search: list](https://developers.google.com/youtube/v3/docs/search/list?hl=ja)
 - キーワード検索で最新 20 件の動画リストを表示 (2019-05-23)
   [![Image from Gyazo](https://i.gyazo.com/e01acdef145648f418ea1fcf39989a92.gif)](https://gyazo.com/e01acdef145648f418ea1fcf39989a92)
 
-## Feature work
+## Future work
 
-- アプリ内で動画の再生
+- アプリ内での動画再生
 - React-Router による適切なルーティング
+- OAuth を使ったログイン
 - その他色々

@@ -1,16 +1,15 @@
-import React from "react";
-import VideoListProps from "./VideoListProps";
+import React from 'react';
+import VideoListProps from './VideoListProps';
+import VideoItem from '../VideoItem/VideoItem';
+
 export default class VideoList extends React.Component<VideoListProps> {
   public render() {
     const { searchListResponse } = this.props;
     return (
-      <ul>
-        {searchListResponse.items.map(item => (
-          <li key={item.id.videoId}>
-            <p>{item.snippet.title}</p>
-          </li>
-        ))}
-      </ul>
+      <div>
+        {searchListResponse.items.length > 0 &&
+          searchListResponse.items.map((item, index) => <VideoItem key={index} item={item} />)}
+      </div>
     );
   }
 }

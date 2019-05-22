@@ -1,4 +1,4 @@
-interface SearchResult {
+export interface SearchResult {
   kind: string;
   etag: string;
   id: {

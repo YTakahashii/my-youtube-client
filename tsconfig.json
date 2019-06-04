@@ -16,5 +16,6 @@
     "jsx": "preserve",
     "rootDir": "src"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "extends": "./paths.json"
 }

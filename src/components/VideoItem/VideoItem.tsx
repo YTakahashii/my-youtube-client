@@ -1,36 +1,13 @@
 import React from 'react';
-import { createStyles, Theme, withStyles, WithStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import { SearchResult } from 'src/states/SearchListResponse';
 import Typography from '@material-ui/core/Typography';
+import VideoItemProps from './VideoItemProps';
+import styles from './VideoItemStyle';
 
-const styles = (theme: Theme) =>
-  createStyles({
-    card: {
-      margin: theme.spacing.unit,
-      maxHeight: 180,
-    },
-    actionArea: {
-      display: 'flex',
-      justifyContent: 'flex-start',
-    },
-    details: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
-    content: {
-      flex: '1 0 auto',
-    },
-  });
-
-type VideoItemOwnProps = {
-  item: SearchResult;
-};
-type Props = VideoItemOwnProps & WithStyles<typeof styles>;
-
-const VideoItem: React.FC<Props> = props => {
+const VideoItem: React.FC<VideoItemProps> = props => {
   const { classes, item } = props;
   return (
     <Card className={classes.card}>

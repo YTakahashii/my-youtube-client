@@ -3,7 +3,7 @@ import { createStyles, Theme, withStyles, WithStyles } from '@material-ui/core/s
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import { SearchResult } from '../../states/SearchListResponse';
+import { SearchResult } from 'src/states/SearchListResponse';
 import Typography from '@material-ui/core/Typography';
 
 const styles = (theme: Theme) =>

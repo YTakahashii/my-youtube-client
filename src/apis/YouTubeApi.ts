@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import SearchListResponse from '../states/SearchListResponse';
+import SearchListResponse from 'src/states/SearchListResponse';
 
 export default class YouTubeApi {
   public async search(q: string) {

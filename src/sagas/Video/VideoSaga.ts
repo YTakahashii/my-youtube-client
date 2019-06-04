@@ -1,8 +1,8 @@
 import { takeLatest, call, put } from 'redux-saga/effects';
-import VideoActionType from '../../actions/Video/VideoActionType';
-import YouTubeApi from '../../apis/YouTubeApi';
-import * as VideoActionCreators from '../../actions/Video/VideoActionCreator';
-import { PromiseGenericType } from '../../utils/TypeUtils';
+import VideoActionType from 'src/actions/Video/VideoActionType';
+import YouTubeApi from 'src/apis/YouTubeApi';
+import * as VideoActionCreators from 'src/actions/Video/VideoActionCreator';
+import { PromiseGenericType } from 'src/utils/TypeUtils';
 
 const api = new YouTubeApi();
 

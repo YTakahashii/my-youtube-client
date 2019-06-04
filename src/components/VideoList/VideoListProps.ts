@@ -1,4 +1,4 @@
-import SearchListResponse from "../../states/SearchListResponse";
+import SearchListResponse from 'src/states/SearchListResponse';
 
 export type VideoListConnectedProps = {
   searchListResponse: SearchListResponse;

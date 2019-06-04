@@ -1,5 +1,5 @@
 import VideoActionType from './VideoActionType';
-import SearchListResponse from '../../states/SearchListResponse';
+import SearchListResponse from 'src/states/SearchListResponse';
 import { createAsyncAction } from 'typesafe-actions';
 
 export const searchVideos = createAsyncAction(

@@ -1,6 +1,6 @@
-import SearchListResponse from '../../states/SearchListResponse';
-import VideoActionType from '../../actions/Video/VideoActionType';
-import VideoAction from '../../actions/Video/VideoAction';
+import SearchListResponse from 'src/states/SearchListResponse';
+import VideoActionType from 'src/actions/Video/VideoActionType';
+import VideoAction from 'src/actions/Video/VideoAction';
 
 const initialState: SearchListResponse = {
   kind: '',

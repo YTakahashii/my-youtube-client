@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import { theme } from 'src/utils/theme';
+import { theme } from '../../utils/theme';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -15,8 +15,8 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import { mainDrawerItems } from './DrawerItems';
-import SearchBar from 'src/containers/SearchBar/SearchBar';
-import VideList from 'src/containers/VideoList/VideoList';
+import SearchBar from '../../containers/SearchBar/SearchBar';
+import VideList from '../../containers/VideoList/VideoList';
 import styles from './AppStyles';
 import Props from './AppProps';
 import State from './AppState';
@@ -95,19 +95,14 @@ class PrimarySearchAppBar extends React.Component<Props, State> {
           <Drawer
             variant='permanent'
             classes={{
-              paper: classNames(
-                classes.drawerPaper,
-                !this.state.isOpenDrawer && classes.drawerPaperClose
-              ),
+              paper: classNames(classes.drawerPaper, !this.state.isOpenDrawer && classes.drawerPaperClose),
             }}
             open={this.state.isOpenDrawer}
           >
             <List>{mainDrawerItems}</List>
           </Drawer>
           {renderMenu}
-          <main
-            className={classNames(classes.content, this.state.isOpenDrawer && classes.contentShift)}
-          >
+          <main className={classNames(classes.content, this.state.isOpenDrawer && classes.contentShift)}>
             <div className={classes.appBarSpacer} />
             <VideList />
           </main>

@@ -1,6 +1,6 @@
-import SearchListResponse from 'src/states/SearchListResponse';
-import VideoActionType from 'src/actions/Video/VideoActionType';
-import VideoAction from 'src/actions/Video/VideoAction';
+import SearchListResponse from '../../states/SearchListResponse';
+import VideoActionType from '../../actions/Video/VideoActionType';
+import VideoAction from '../../actions/Video/VideoAction';
 
 const initialState: SearchListResponse = {
   kind: '',
@@ -14,10 +14,7 @@ const initialState: SearchListResponse = {
   items: [],
 };
 
-const searchListResponse = (
-  state: SearchListResponse = initialState,
-  action: VideoAction
-): SearchListResponse => {
+const searchListResponse = (state: SearchListResponse = initialState, action: VideoAction): SearchListResponse => {
   switch (action.type) {
     case VideoActionType.SEARCH_VIDEOS_SUCCEEDED:
       return {
